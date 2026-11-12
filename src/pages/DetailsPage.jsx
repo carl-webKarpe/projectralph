@@ -45,6 +45,8 @@ export default function DetailsPage() {
 
       <div className="details-body">
         <div className={`details-art type-bg-${pokemon.types[0]}`}>
+          <span className="details-sparkle details-sparkle-one" aria-hidden="true" />
+          <span className="details-sparkle details-sparkle-two" aria-hidden="true" />
           <img src={pokemon.image} alt={pokemon.name} />
         </div>
 
