@@ -5,11 +5,14 @@ export default function Header() {
   const { favorites } = useFavorites()
   return (
     <header className="header">
-      <Link to="/" className="brand">
+      <Link to="/" className="brand" aria-label="Go to Pokédex home page">
         <span className="brand-ball" aria-hidden="true" />
-        Find Your Pokemon
+        <span className="brand-text">
+          <span className="brand-kicker">Pocket</span>
+          <span>Pokédex</span>
+        </span>
       </Link>
-      <nav className="nav">
+      <nav className="nav" aria-label="Main navigation">
         <NavLink to="/" end>Browse</NavLink>
         <NavLink to="/favorites">
           Favorites <span className="badge">{favorites.length}</span>

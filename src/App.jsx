@@ -7,7 +7,7 @@ import NotFoundPage from './pages/NotFoundPage'
 
 export default function App() {
   return (
-    <>
+    <div className="app-shell">
       <Header />
       <main className="container">
         <Routes>
@@ -20,6 +20,6 @@ export default function App() {
       <footer className="footer">
         Data from <a href="https://pokeapi.co" target="_blank" rel="noreferrer">PokéAPI</a>. Pokémon © Nintendo / Game Freak.
       </footer>
-    </>
+    </div>
   )
 }
